@@ -5,6 +5,8 @@ I = false,
 N = false,
 G = false;
 
+let BNum, INum, NNum, GNum, ONum;
+
 
 function newNumber(maxNumber) {
     let x = Math.floor (Math.random() * maxNumber) + 1;
@@ -31,6 +33,13 @@ function newNumber(maxNumber) {
     
     if (B == true && I == true && N == true && G == true && O == true ){
         console.log(`Bingo!!!`);
+        console.table({
+            B: BNum,
+            I: INum,
+            N: NNum,
+            G: GNum,
+            O: ONum,
+        })
     }
     
     
@@ -40,5 +49,10 @@ function newNumber(maxNumber) {
 
 }
 
-newNumber(75);
+
+
+while (B == false || I == false || N == false || G == false || O == false ) {
+    
+    newNumber(75);
+}
 
