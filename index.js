@@ -49,7 +49,7 @@ function newNumber(maxNumber) {
 
 }
 
-
+let counter = 5;
 
 while (B == false || I == false || N == false || G == false || O == false ) {
     
